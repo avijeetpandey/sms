@@ -2,3 +2,10 @@ server:
   servlet:
     context-path: /api
   port : 5000
+
+app :
+  datasource:
+    jdbc-url: jdbc:postgresql://localhost:5432/student
+    username : postgres
+    password : root
+    pool-size: 30
