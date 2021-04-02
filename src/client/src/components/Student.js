@@ -47,7 +47,7 @@ const Student = () => {
 
   // fetch student details at render
   useEffect(() => {
-    fetch('/students')
+    fetch('/api/students')
       .then((res) => res.json())
       .then((students) => {
         setStudents(students)
