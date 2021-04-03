@@ -30,4 +30,8 @@ public class StudentService {
         // TODO : verify email is not taken
         studentDataAccessService.insertStudent(generatedStudentId,student);
     }
+
+    public List<StudentCourse> getAllCoursesForStudent(UUID studentId) {
+        return studentDataAccessService.getAllCoursesForStudent(studentId);
+    }
 }
