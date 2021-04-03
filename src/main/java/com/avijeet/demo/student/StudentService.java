@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
 
 @Service
 public class StudentService {
@@ -15,7 +17,17 @@ public class StudentService {
         this.studentDataAccessService = studentDataAccessService;
     }
 
-    public List<Student> getAllStudents(){
+     List<Student> getAllStudents(){
         return studentDataAccessService.selectAllStudents();
+    }
+
+    void addStudent(Student student){
+        addStudent(null,student);
+    }
+
+     void addStudent(UUID studentId,Student student) {
+        UUID generatedStudentId =  Optional.ofNullable(studentId).orElse(UUID.randomUUID());
+        // TODO : verify email is not taken
+        studentDataAccessService.insertStudent(generatedStudentId,student);
     }
 }
