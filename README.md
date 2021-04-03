@@ -4,18 +4,19 @@ Student management system written in Java ( Spring Boot ) with React , this repo
 
 ## Frontend
 
-The fronend is very simple , it just displays student details om the browser
+The frontend is very simple , it just displays student details on the browser
 
 ## Backend Implementation
 
 The Following the API endpoints implemented
 
-- [ ] **/students**
-    - [ ] **METHOD** : GET , fetches the list of students from the DB
-    - [ ] **METHOD** : POST , adds a new student into the database
-    - [ ] Also custom exception handlers are implemented on the server side , for better experience
-- [ ]  **/students/{studentId}/courses**
-    - [ ] **METHOD** : GET , fetches all the information related to courses that the student is enrolled in
+- [x] **/students**
+    - [x] **METHOD** : GET , fetches the list of students from the DB
+    - [x] **METHOD** : POST , adds a new student into the database
+    - [x] Also custom exception handlers are implemented on the server side , for better experience
+- [x]  **/students/{studentId}/courses**
+    - [x] **METHOD** : GET , fetches all the information related to courses that the student is enrolled in
+
 ```
 Example : http://localhost:5000/students/
   [
