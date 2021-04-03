@@ -37,6 +37,17 @@ public class Student {
         return gender;
     }
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentId=" + studentId +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", gender=" + gender +
+                '}';
+    }
+
     enum Gender{
         MALE,
         FEMALE
