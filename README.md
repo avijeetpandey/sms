@@ -2,6 +2,12 @@
 
 Student management system written in Java ( Spring Boot ) with React , this repo was created while learning SpringBoot
 
+## Technologies used :muscle:
+- [x] SpringBoot 
+- [x] React
+- [x] Postgres
+- [x] Others -> Maven , Docker , AntD UI framework
+
 ## Frontend
 
 The frontend is very simple , it just displays student details on the browser
