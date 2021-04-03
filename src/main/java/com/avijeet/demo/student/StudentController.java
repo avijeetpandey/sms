@@ -3,6 +3,7 @@ package com.avijeet.demo.student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 import java.util.UUID;
 
@@ -23,7 +24,7 @@ public class StudentController {
     }
 
     @PostMapping
-    public void addStudent(@RequestBody Student student){
+    public void addStudent(@RequestBody @Valid Student student){
          studentService.addStudent(student);
     }
 }

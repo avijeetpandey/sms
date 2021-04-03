@@ -41,7 +41,7 @@ public class StudentDataAccessService {
                 " gender) " +
                 "VALUES (?,?,?,?,?)";
 
-        // this statment returns 0 or 1 based on success or failure
+        // this statement returns 0 or 1 based on success or failure
         return jdbcTemplate.update(sql,
                 studentId,
                 student.getFirstName(),
